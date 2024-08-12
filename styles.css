@@ -1,64 +1,108 @@
+/* styles.css */
 body,
 html {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Arial", sans-serif;
-  background: url("https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMGJhY2tncm91bmQlMjBmb3IlMjBpbnZpdGF0aW9uc3xlbnwwfHwwfHx8MA%3D%3D")
+  font-family: "Georgia", serif;
+  background: url("https://png.pngtree.com/background/20230317/original/pngtree-wedding-invitation-pink-romantic-background-picture-image_2149088.jpg")
     no-repeat center center fixed;
   background-size: cover;
+  color: #333; /* Dark gray for text */
 }
 
 .invitation {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #444;
+  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better readability */
+  border-radius: 15px;
+  padding: 5%;
+  max-width: 600px;
   text-align: center;
-  border: 2px solid #f5f5f5;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
-header h1,
-.details h2 {
-  color: #d60051;
+header h1 {
+  font-size: 28px;
+  color: #e23d28; /* Brownish color for heading */
+  margin-bottom: 15px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
-.countdown {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  font-size: 1.5em;
+header p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-style: italic;
 }
 
-.time {
-  background: rgba(254, 182, 182, 0.9);
-  padding: 10px 20px;
-  border-radius: 10px;
+.details {
+  margin-bottom: 25px;
 }
 
-.time span {
-  display: block;
-  font-size: 0.5em;
+.details p {
+  font-size: 16px;
+  margin: 12px 0;
+  line-height: 1.4;
 }
 
 .map-button {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #d60051;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #e23d28;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  gap: 20px;
 }
 
 .map-button:hover {
-  background-color: #bf0040;
+  background-color: #8a4711;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.time {
+  background: #e23d28;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 22px;
+  width: 75px;
+  text-align: center;
+}
+
+.time span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+audio {
+  display: none;
+}
+
+/* Additional styles for wedding theme */
+.couple-names {
+  font-size: 24px;
+  color: #b5651d;
+  margin-bottom: 15px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  background: #b5651d;
+  margin: 20px auto;
+  opacity: 0.5;
 }
