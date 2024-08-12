@@ -18,7 +18,7 @@ html {
   background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better readability */
   border-radius: 15px;
   padding: 5%;
-  max-width: 600px;
+  max-width: 580px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
@@ -50,6 +50,7 @@ header p {
 .map-button {
   display: inline-block;
   margin-top: 15px;
+  margin-right: 10px; /* Adjust the right margin as needed */
   padding: 12px 20px;
   background-color: #e23d28;
   color: white;
@@ -57,7 +58,6 @@ header p {
   border-radius: 5px;
   font-size: 14px;
   transition: background-color 0.3s ease;
-  gap: 20px;
 }
 
 .map-button:hover {
