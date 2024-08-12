@@ -128,7 +128,7 @@ audio {
   .map-button {
     display: block;
     margin: 10px 0; /* Reduce vertical margin */
-    width: 100%; /* Full width of the container */
+    width: 80%; /* Full width of the container */
   }
 
   .countdown {
