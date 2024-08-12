@@ -15,17 +15,17 @@ html {
 }
 
 .invitation {
-  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better readability */
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 5%;
   max-width: 580px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
   font-size: 28px;
-  color: #e23d28; /* Brownish color for heading */
+  color: #e23d28;
   margin-bottom: 15px;
   font-weight: normal;
   letter-spacing: 1px;
@@ -50,7 +50,7 @@ header p {
 .map-button {
   display: inline-block;
   margin-top: 15px;
-  margin-right: 10px; /* Adjust the right margin as needed */
+  margin-right: 10px;
   padding: 12px 20px;
   background-color: #e23d28;
   color: white;
@@ -91,7 +91,6 @@ audio {
   display: none;
 }
 
-/* Additional styles for wedding theme */
 .couple-names {
   font-size: 24px;
   color: #b5651d;
@@ -105,4 +104,45 @@ audio {
   background: #b5651d;
   margin: 20px auto;
   opacity: 0.5;
+}
+
+/* Media queries for mobile screens */
+@media screen and (max-width: 480px) {
+  .invitation {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .details p {
+    font-size: 14px;
+  }
+
+  .map-button {
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .time {
+    margin: 10px;
+    font-size: 18px;
+    width: 65px;
+  }
+
+  .couple-names {
+    font-size: 20px;
+  }
 }
